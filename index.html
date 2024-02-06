@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myapp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data binding</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="angular.min.js"></script>
+    <script>
+        var app= angular.module("myapp",[]);
+        app.controller("twoway",function($scope){
+            $scope.msg="VIWERS";
+        });
+    </script>
+</head>
+<body>
+    <div ng-controller="twoway"> 
+    
+        <center><h1 class="span">HI, {{msg}} </h1><br>
+        <br><br>
+ Enter the Good Name :<input type="text" ng-model="msg">
+        <br>
+        
+      <p> WELCOME YOU {{msg}}</p></p> 
+    </div></center>
+   
+</body>
+</html>
